@@ -9,6 +9,11 @@
   </head>
 
   <body>
+    <nav>
+      <%= link_to "25 Things I Love about You", loves_path, class:"button" %>
+      <%= link_to "What People are Saying", reviews_path, class:"button" %>
+      <%= link_to "Timeline", resume_path, class:"button" %>
+    </nav>
     <%= yield %>
   </body>
 </html>

@@ -1,0 +1,12 @@
+<h1>25 Things I Love About You</h1>
+
+<ol>
+<% @loves.each do |love| %>
+  <li>
+    <%= link_to love.love, lofe_path(love.id), class:"button" %>
+  </li>
+<%end%>
+</ol>
+
+
+<%=link_to "Add More", new_lofe_path, class:"button" %>

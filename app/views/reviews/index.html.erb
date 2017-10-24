@@ -1,0 +1,20 @@
+<h1>All Reviews</h1>
+
+<% @reviews.each do |review| %>
+<article class="review">
+  <ul>
+    <li>
+      Who: <%= review.name %>
+    </li>
+    <li>
+      Review: <%= review.text %>
+    </li>
+    <li>
+      Relationship: <%= review.relationship %>
+    </li>
+    <li>
+      Rating: <%= review.rating %> out of 5
+    </li>
+  </ul>
+</article>
+<%end%>
