@@ -25,6 +25,7 @@
  main {
    margin: 10vw;
    font-family: 'Josefin Sans', sans-serif;
+   max-width: 80vw;
  }
 
 
@@ -35,10 +36,16 @@
   border: 10px black solid;
   border-radius: 50%;
   margin-bottom: 4vw;
+  max-width: 50vw;
 }
 
 .img{
   border-radius: 50%;
+}
+
+.homepage_image{
+  padding: 2vw;
+  padding-left: 15vw;
 }
 
 nav :nth-child(n){
@@ -49,6 +56,11 @@ nav :nth-child(n){
 }
 
 nav {
-  margin: 2vw 0 2vw 0;
   align-items: center;
+}
+
+.review {
+  margin: 5vw;
+  padding-bottom: 3vw;
+  border-bottom: black solid 1px;
 }
