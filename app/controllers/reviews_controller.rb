@@ -18,7 +18,7 @@ class ReviewsController < ApplicationController
       redirect_to reviews_path
     else
       render :new
-    end 
+    end
   end
 
 
@@ -32,7 +32,7 @@ private
   end
 
   def review_params
-    params.require(:review).permit(:name, :description, :relationship, :rating)
+    params.require(:review).permit(:name, :text, :relationship, :rating)
   end
 
 
