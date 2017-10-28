@@ -1,5 +1,6 @@
 <h1>All Reviews</h1>
 
+
 <% @reviews.each do |review| %>
 <article class="review">
   <ul>
@@ -18,3 +19,4 @@
   </ul>
 </article>
 <%end%>
+<%= link_to "Add a New Review", new_review_path %>

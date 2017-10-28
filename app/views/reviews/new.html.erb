@@ -1,0 +1,20 @@
+<h1>Add a New Review of Kayla!</h1>
+
+<section>
+  <%= form_for @review do |f| %>
+  <%= f.label :name %>
+  <%= f.text_area :name %>
+
+  <%= f.label :text %>
+  <%= f.text_area :text %>
+
+  <%= f.label :relationship %>
+  <%= f.text_area :relationship %>
+
+  <%= f.label :rating %>
+  <%= f.radio_button :rating  %>
+
+  <%= f.submit %>
+
+  <%end%>
+</section>
