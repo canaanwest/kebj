@@ -28,6 +28,9 @@
   100% { opacity: 1; color: #B58282;}
 }
 
+h1, h2 {
+  font-family: 'Pacifico', cursive;
+}
 .home_page h1{
   font-size: 8vw;
   text-align: center;
@@ -37,7 +40,8 @@
 
 body {
   /*background: #FDE4CB;*/
-  background: url("http://universe-beauty.com/albums/userpics/1/7/stars-and-planets-photo-img329-JPG.jpg")
+  background: url("http://universe-beauty.com/albums/userpics/1/7/stars-and-planets-photo-img329-JPG.jpg");
+
 }
 
 h2 {
@@ -51,6 +55,8 @@ main {
   margin: 12.5vw;
   font-family: 'Josefin Sans', sans-serif;
   max-width: 80vw;
+  color: beige;
+  font-family: 'Pacifico', cursive;
 }
 
 #bestie {
