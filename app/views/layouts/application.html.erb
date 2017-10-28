@@ -12,8 +12,12 @@
   </head>
 
   <body>
+    <nav>
+      <%= link_to "Home is Where Ever I'm with You", homepage_path, class:"button"%>
+      <%= link_to "25 Things I Love About You", loves_path, class:"button" %>
+      <%= link_to "Reviews of Kayla", reviews_path, class:"button" %>
+    </nav>
 
     <%= yield %>
-
   </body>
 </html>
