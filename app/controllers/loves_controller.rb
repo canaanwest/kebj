@@ -16,7 +16,12 @@ class LovesController < ApplicationController
     @love = Love.new love_params
     if @love.save
       redirect_to loves_path
-    end 
+    end
+  end
+
+  def destroy
+    @love.destroy
+    redirect_to loves_path
   end
 
 private
