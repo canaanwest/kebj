@@ -20,22 +20,14 @@
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Pacifico');
 
 
-@-webkit-keyframes color-change {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
+@keyframes color-change {
+  0%   { opacity: 0; color: #B58282;}
+  25%  { opacity: .25; color: #F4E285}
+  50%  { opacity: .5; color: #B58282;}
+  75%  { opacity: .74; color: #B58282}
+  100% { opacity: 1; color: #B58282;}
 }
-@-moz-keyframes color-change {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
-}
-@-o-keyframes color-change  {
-  0%  { opacity: 1; }
-  100% { opacity: 1; }
-}
-@keyframes color-change  {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
-}
+
 
 .home_page h1{
   font-size: 8vw;
@@ -66,10 +58,7 @@ main {
 #bestie {
   color: #F5AA68;
   text-decoration: underline;
-  -webkit-animation: color-change 2s infinite; /* Safari 4+ */
-  -moz-animation:    color-change 1s infinite; /* Fx 5+ */
-  -o-animation:      color-change 1s infinite; /* Opera 12+ */
-  animation:         color-change 1s infinite; /* IE 10+, Fx 29+ */
+  animation: color-change 3s infinite; /* Safari 4+ */
 
 }
 
