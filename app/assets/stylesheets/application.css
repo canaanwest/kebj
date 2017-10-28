@@ -35,6 +35,7 @@ body {
 h2 {
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
+  color: beige;
 }
 
 main {
@@ -46,19 +47,12 @@ main {
 
 .homepage_image img{
   padding: 5vw;
-  border: 1px beige solid;
+  border: 20px beige solid;
   border-radius: 50%;
   margin-bottom: 4vw;
   max-width: 50vw;
-  background: url(http://pmdvod.nationalgeographic.com/NG_Video/960/211/moon-101-nasa_640x360_808580163611.jpg);
-  background-position: center;
-  background-size: 300%;
 }
 
-body{
-  background: url(https://www.readytribe.com/wp-content/uploads/2015/09/BigdipISS.jpg);
-
-}
 
 .img{
   border-radius: 50%;
