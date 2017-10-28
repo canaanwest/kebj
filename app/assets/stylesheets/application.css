@@ -33,7 +33,8 @@
   /*border-radius: 50%;*/
   padding: 10px;
   border: 10px black solid;
-  border-radius: 50%
+  border-radius: 50%;
+  margin-bottom: 2vw;
 }
 
 .img{
