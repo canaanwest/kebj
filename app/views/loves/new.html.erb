@@ -1,8 +1,8 @@
 
 <%= form_for @love do |f| %>
 <%=f.label "Love Title", :love %>
-<%=f.text_area :love%>
+<%=f.text_area "Title", :love%>
 <%=f.label "Love Description", :description%>
-<%=f.text_area :description%>
-<%=f.submit "Make Love"%>
+<%=f.text_area "What do you love?", :description%>
+<%=f.submit "Make Love", class:"button"%>
 <%end%>

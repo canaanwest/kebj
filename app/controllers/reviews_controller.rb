@@ -13,6 +13,12 @@ class ReviewsController < ApplicationController
 
   def create
     @review = Review.new review_params
+    if @review.save
+      flash[:result_text] = "Review Saved!"
+      redirect_to reviews_path
+    else
+      render :new
+    end 
   end
 
 
@@ -26,7 +32,7 @@ private
   end
 
   def review_params
-    pararms.require(:review).permit()
+    params.require(:review).permit(:name, :description, :relationship, :rating)
   end
 
 

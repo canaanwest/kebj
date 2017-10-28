@@ -31,16 +31,17 @@
   100% { opacity: 1; color: #B58282;}
 }
 
+body {
+  /*background: #FDE4CB;*/
+  background: black;
+  color: beige;
+}
+
 .home_page h1{
   font-size: 8vw;
   text-align: center;
   font-family: 'Pacifico', cursive;
   color: #FAD8BA;
-}
-
-body {
-  /*background: #FDE4CB;*/
-  background: black;
 }
 
 h2 {

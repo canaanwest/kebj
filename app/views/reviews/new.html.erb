@@ -3,18 +3,18 @@
 <section>
   <%= form_for @review do |f| %>
   <%= f.label :name %>
-  <%= f.text_area :name %>
+  <%= f.text_area :name, defualt:"What's your name?"%>
 
   <%= f.label :text %>
-  <%= f.text_area :text %>
+  <%= f.text_area :text, default:"Your review goes here!"%>
 
-  <%= f.label :relationship %>
-  <%= f.text_area :relationship %>
+  <%= f.label :relationship, "Relationship to Kayla?" %>
+  <%= f.text_area :relationship, default:"Relationship to Kayla?" %>
 
-  <%= f.label :rating %>
-  <%= f.text_area :rating %>
+  <%= f.label :rating, "Rating (1-5)"%>
+  <%= f.text_area :rating, default:"Rating (1-5)" %>
 
-  <%= f.submit %>
+  <%= f.submit class:"button" %>
 
   <%end%>
 </section>
