@@ -1,32 +1,39 @@
 /*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- *= require foundation_and_overrides
+* This is a manifest file that'll be compiled into application.css, which will include all the files
+* listed below.
+*
+* Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+* vendor/assets/stylesheets directory can be referenced here using a relative path.
+*
+* You're free to add application-wide styles to this file and they'll appear at the bottom of the
+* compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+* files in this directory. Styles in this file should be added after the last require_* statement.
+* It is generally better to create a new file per style scope.
+*
+*= require_tree .
+*= require_self
+*= require foundation_and_overrides
 
- */
+*/
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
 
- h1, h2 {
-   text-align: center;
-   font-family: 'Josefin Sans', sans-serif;
- }
+.home_page h1 {
+  font-size: 5vw;
+  text-align: center;
+  font-family: 'Kaushan Script', cursive;
+}
 
- main {
-   margin: 10vw;
-   font-family: 'Josefin Sans', sans-serif;
-   max-width: 80vw;
- }
+h2 {
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+main {
+  margin: 12.5vw;
+  font-family: 'Josefin Sans', sans-serif;
+  max-width: 80vw;
+}
 
 
 .homepage_image img{
@@ -46,6 +53,7 @@
 .homepage_image{
   padding: 2vw;
   padding-left: 15vw;
+  z-index:100;
 }
 
 nav :nth-child(n){
