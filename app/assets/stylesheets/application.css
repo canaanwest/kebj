@@ -17,11 +17,19 @@
 */
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Pacifico');
 
-.home_page h1 {
-  font-size: 5vw;
+.home_page h1{
+  font-size: 8vw;
   text-align: center;
-  font-family: 'Kaushan Script', cursive;
+  font-family: 'Pacifico', cursive;
+  color: beige;
+
+}
+
+body {
+  /*background: #FDE4CB;*/
+  background: black;
 }
 
 h2 {
@@ -37,13 +45,19 @@ main {
 
 
 .homepage_image img{
-  /*padding-left: 10%;*/
-  /*border-radius: 50%;*/
-  padding: 10px;
-  border: 10px black solid;
+  padding: 5vw;
+  border: 1px beige solid;
   border-radius: 50%;
   margin-bottom: 4vw;
   max-width: 50vw;
+  background: url(http://pmdvod.nationalgeographic.com/NG_Video/960/211/moon-101-nasa_640x360_808580163611.jpg);
+  background-position: center;
+  background-size: 300%;
+}
+
+body{
+  background: url(https://www.readytribe.com/wp-content/uploads/2015/09/BigdipISS.jpg);
+
 }
 
 .img{
@@ -54,13 +68,15 @@ main {
   padding: 2vw;
   padding-left: 15vw;
   z-index:100;
+
 }
 
 nav :nth-child(n){
   margin: 0;
   margin-top: 2vw;
   font-family: 'Josefin Sans', sans-serif;
-  background-color: #073e96;
+  /*background-color: #2B4162;*/
+  background-color: #006EBC;
 }
 
 nav {
