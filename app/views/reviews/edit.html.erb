@@ -1,0 +1,20 @@
+<h1>Edit This Review</h1>
+
+<section>
+  <%= form_for @review do |f| %>
+  <%= f.label :name, "Name", class:"text" %>
+  <%= f.text_area :name, defualt:"What's your name?"%>
+
+  <%= f.label :text, "Review", class:"text" %>
+  <%= f.text_area :text%>
+
+  <%= f.label :relationship, "Relationship", class:"text"  %>
+  <%= f.text_area :relationship, default:"Relationship to Kayla?"%>
+
+  <%= f.label :rating, "Rating (1-5)", class:"text"%>
+  <%= f.text_area :rating, default:"Rating (1-5)" %>
+
+  <%= f.submit class:"button" %>
+
+  <%end%>
+</section>

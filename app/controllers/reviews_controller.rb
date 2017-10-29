@@ -1,7 +1,7 @@
 class ReviewsController < ApplicationController
-
+  before_action :find_review
   def index
-    @reviews = Review.all
+    @reviews = Review.order(:id)
   end
 
   def show
@@ -21,6 +21,18 @@ class ReviewsController < ApplicationController
     end
   end
 
+  def edit
+  end
+
+  def update
+    @review.update_attributes review_params
+    if @review.save
+      redirect_to reviews_path
+    else
+      render :new
+    end
+  end
+
 
   def destroy
     @review.destroy
@@ -28,11 +40,11 @@ class ReviewsController < ApplicationController
 
 private
   def find_review
-    @review = Review.find(params[:id].to_i)
+    @review = Review.find_by(id: params[:id].to_i)
   end
 
   def review_params
-    params.require(:review).permit(:name, :text, :relationship, :rating)
+    params.require(:review).permit(:id, :name, :text, :relationship, :rating)
   end
 
 
