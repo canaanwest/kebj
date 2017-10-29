@@ -22,10 +22,10 @@
 
 @keyframes color-change {
   0%   { opacity: 0; color: #B58282;}
-  25%  { opacity: .25; color: #F4E285;}
-  50%  { opacity: .5; color: #B58282;}
-  75%  { opacity: .74; color: #B58282;}
-  100% { opacity: 1; color: #B58282;}
+  25%  { opacity: .25; color:#B58282;}
+  50%  { opacity: .5; color: #F4E285;}
+  75%  { opacity: .74; color: #F5AA68;}
+  100% { opacity: 1; color: #F5AA68;}
 }
 
 h1, h2 {
@@ -39,9 +39,8 @@ h1, h2 {
 }
 
 body {
-  /*background: #FDE4CB;*/
-  background: url("http://universe-beauty.com/albums/userpics/1/7/stars-and-planets-photo-img329-JPG.jpg");
-
+  background: #FDE4CB;
+  width: 100%;
 }
 
 h2 {
