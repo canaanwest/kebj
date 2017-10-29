@@ -109,6 +109,7 @@ nav {
   margin: 5vw;
   padding-bottom: 3vw;
   border-bottom: black solid 1px;
+  overflow: scroll;
 }
 
 .text {
@@ -117,4 +118,14 @@ nav {
 
 .reviews {
   border: solid beige 2px;
+}
+
+ul {
+  list-style: none;
+}
+
+.rating{
+  text-decoration: underline;
+  font-weight: bold;
+  font-family: 'Pacifico', cursive;
 }

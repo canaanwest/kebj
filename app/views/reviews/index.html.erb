@@ -5,17 +5,10 @@
 <article class="review">
   <h2> Reviewed by: <%= review.name %></h2>
   <h4><%= review.relationship %></h4>
-  <ul>
-    <li>
-      <%= review.text %>
-    </li>
-    <li>
+  <p>
+    <%= "#{review.text} " %><span class="rating"><%= review.rating %> out of 5</span>
+  </p>
 
-    </li>
-    <li>
-      Rating: <%= review.rating %> out of 5
-    </li>
-  </ul>
 </article>
 <%end%>
 </section>
