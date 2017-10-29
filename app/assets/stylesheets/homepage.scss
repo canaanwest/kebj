@@ -51,6 +51,14 @@ h2 {
   size: .8em;
 }
 
+h4 {
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #5B87FF;
+  size: .5em;
+  border-bottom: solid 1px #5B87FF;
+}
+
 main {
   margin: 12.5vw;
   font-family: 'Josefin Sans', sans-serif;
@@ -105,4 +113,8 @@ nav {
 
 .text {
   color:beige;
+}
+
+.reviews {
+  border: solid beige 2px;
 }

@@ -1,17 +1,16 @@
 <h1>All Reviews</h1>
 
-
+<section class="reviews">
 <% @reviews.each do |review| %>
 <article class="review">
+  <h2> Reviewed by: <%= review.name %></h2>
+  <h4><%= review.relationship %></h4>
   <ul>
     <li>
-      Who: <%= review.name %>
+      <%= review.text %>
     </li>
     <li>
-      Review: <%= review.text %>
-    </li>
-    <li>
-      Relationship: <%= review.relationship %>
+
     </li>
     <li>
       Rating: <%= review.rating %> out of 5
@@ -19,4 +18,5 @@
   </ul>
 </article>
 <%end%>
+</section>
 <%= link_to "Add a New Review", new_review_path %>
